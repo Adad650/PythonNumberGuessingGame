@@ -32,5 +32,5 @@ while hasUserGuessedCorrectly == False:
 
 print("Good job you did it you did it in " + str(userAttempts) + " attempts. Press ^R to play again. ")
 
-print("THANKS FOR PLAYING!!!")
+print("THANKS FOR PLAYING!!! SEE YOU SOON")
 
