@@ -3,22 +3,22 @@ import random
 
 userAttempts = 0
 hasUserGuessedCorrectly = False
-print("Enter name")
+print("Enter your name.")
 userName = input()
-print("Hi " + userName + " good to see you. What is the lowest number to guess ?")
+print("Hi " + userName + " good to see you. What is the lowest number to guess?")
 
 minGuess = int(input())
 
-print("and your highest number to guess is: ?")
+print("and your highest number to guess is : ")
 maxGuess = int(input())
 
-print("Ok great lets start")
+print("Ok great lets start.")
 
 secretNmber = random.randrange(minGuess, maxGuess)
 
 
 
-print("Guess the number please")
+print("Guess the number please.")
 while hasUserGuessedCorrectly == False:
     userGuessNumber = int(input())
     userAttempts = userAttempts + 1
@@ -26,11 +26,11 @@ while hasUserGuessedCorrectly == False:
         hasUserGuessedCorrectly = True
         break
     if userGuessNumber > secretNmber:
-        print("Too high try again")
+        print("Too high try again.")
     if userGuessNumber < secretNmber:
-        print("Too low try again")
+        print("Too low try again.")
 
 print("Good job you did it you did it in " + str(userAttempts) + " attempts. Press ^R to play again. ")
 
-
+print("THANKS FOR PLAYING!!!")
 
